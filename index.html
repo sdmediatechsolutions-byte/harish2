@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harish Official – Join Telegram Channel</title>
+<meta name="description" content="Join Harish Official Telegram Channel for stock market learning and market insights.">
+
+<!-- ====== EDIT THESE 3 VALUES ====== -->
+<script>
+  var CONFIG = {
+    PIXEL_ID: "YOUR_PIXEL_ID",                       // Meta Pixel ID
+    TELEGRAM_URL: "https://t.me/+YOUR_INVITE_LINK",  // Telegram invite link
+    LOGO: "harish.jpg"                                // profile photo file (same folder)
+  };
+</script>
+
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', CONFIG.PIXEL_ID);
+fbq('track', 'PageView');
+</script>
+
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:24px 16px;
+  }
+  .card{
+    width:100%;
+    max-width:440px;
+    background:#fff;
+    border-radius:28px;
+    box-shadow:0 10px 30px rgba(0,0,0,.10);
+    padding:44px 28px 30px;
+    text-align:center;
+  }
+  .logo-wrap{
+    width:170px;height:170px;margin:0 auto 26px;
+    border-radius:50%;
+    border:6px solid #FFD400;
+    box-shadow:0 0 22px 6px rgba(255,212,0,.45);
+    overflow:hidden;
+    animation:glow 2.2s ease-in-out infinite;
+  }
+  .logo-wrap img{width:100%;height:100%;object-fit:cover;display:block}
+  @keyframes glow{
+    0%,100%{box-shadow:0 0 18px 4px rgba(255,212,0,.40)}
+    50%{box-shadow:0 0 30px 10px rgba(255,212,0,.65)}
+  }
+  h1{
+    font-size:30px;
+    font-weight:900;
+    color:#111a2e;
+    line-height:1.15;
+    letter-spacing:.5px;
+    margin-bottom:16px;
+  }
+  h1 sup{font-size:11px;vertical-align:super}
+  .sub{
+    font-size:19px;font-weight:700;color:#2b3445;margin-bottom:20px;
+  }
+  .members{
+    font-size:17px;font-weight:800;color:#1fa463;margin-bottom:30px;
+  }
+  .btn{
+    display:block;width:100%;
+    padding:22px 16px;
+    border:none;border-radius:16px;
+    background:linear-gradient(90deg,#0057FF,#00A2FF);
+    color:#fff;font-size:20px;font-weight:900;letter-spacing:.5px;
+    text-decoration:none;cursor:pointer;
+    box-shadow:0 10px 24px rgba(0,110,255,.35);
+    animation:pulse 1.8s infinite;
+  }
+  .btn:active{transform:scale(.98)}
+  @keyframes pulse{
+    0%{transform:scale(1)}
+    50%{transform:scale(1.03)}
+    100%{transform:scale(1)}
+  }
+  .credit{
+    margin-top:24px;font-size:14px;font-weight:700;color:#777;
+  }
+  .credit a{color:#e88a1a;text-decoration:none}
+  @media (max-width:380px){
+    h1{font-size:25px}
+    .logo-wrap{width:145px;height:145px}
+    .btn{font-size:17px;padding:19px 12px}
+  }
+</style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="logo-wrap">
+      <img id="logo" src="harish.jpg" alt="Harish">
+    </div>
+
+    <h1>HARISH<sup>™</sup><br>OFFICIAL 🚀</h1>
+    <p class="sub">Join Official Telegram Channel</p>
+    <p class="members">👥 &nbsp;48,726+ Members | Market Insights</p>
+
+    <a id="joinBtn" class="btn" href="#">JOIN TELEGRAM CHANNEL</a>
+
+    <p class="credit">🚀 Ads Managed by <a href="https://t.me/srsagency" target="_blank" rel="noopener">SRS Tech Agency</a></p>
+  </div>
+
+<script>
+  document.getElementById('logo').src = CONFIG.LOGO;
+  var btn = document.getElementById('joinBtn');
+  btn.href = CONFIG.TELEGRAM_URL;
+  btn.addEventListener('click', function(e){
+    e.preventDefault();
+    try { fbq('track', 'Subscribe'); } catch(err) {}
+    setTimeout(function(){ window.location.href = CONFIG.TELEGRAM_URL; }, 300);
+  });
+</script>
+
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/></noscript>
+</body>
+</html>
